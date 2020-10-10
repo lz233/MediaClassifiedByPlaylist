@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">本地媒體庫按歌單分類</string>
+    <string name="step1_title">步驟1：複製歌單連結</string>
+    <string name="setp2_title">步驟2：選擇媒體庫資料夾</string>
+    <string name="select_button">選擇</string>
+    <string name="setp3_title">步驟3：選擇目標資料夾</string>
+    <string name="setp4_title">步驟4：更改一些選項</string>
+    <string name="setp5_title">步驟5：開始分類</string>
+    <string name="start_button">開始</string>
+    <string name="error_tips">請確認資訊是否無誤。</string>
+    <string name="progress_tips">在完成前請不要離開此頁面。</string>
+    <string name="done_tips">完成！</string>
+    <string name="delete_original_file">刪除原檔案</string>
+
+</resources>

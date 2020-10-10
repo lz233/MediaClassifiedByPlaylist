@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">本地媒体库按歌单分类</string>
+    <string name="step1_title">步骤1：复制歌单链接</string>
+    <string name="setp2_title">步骤2：选择媒体库文件夹</string>
+    <string name="select_button">选择</string>
+    <string name="setp3_title">步骤3：选择目标文件夹</string>
+    <string name="setp4_title">步骤4：更改一些选项</string>
+    <string name="setp5_title">步骤5：开始分类</string>
+    <string name="start_button">开始</string>
+    <string name="error_tips">请确认信息是否无误。</string>
+    <string name="progress_tips">在完成前请不要离开此页面。</string>
+    <string name="done_tips">完成！</string>
+    <string name="delete_original_file">删除原文件</string>
+    <string name="action_about">关于</string>
+    <string name="about_text">一个将本地媒体库按歌单分类的小工具，目前仅支持网易云音乐。\n这是我一个晚上的写完的小玩具，已经很困了，所以能用就行，要求不要太高。</string>
+    <string name="coolapk">酷安</string>
+    <string name="github">Github</string>
+</resources>

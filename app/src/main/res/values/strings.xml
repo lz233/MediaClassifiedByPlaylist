@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Media Classified By Playlist</string>
+    <string name="action_about">About</string>
+    <string name="step1_title">Step 1: Copy the playlist link</string>
+    <string name="setp2_title">Step 2: Select the media library folder</string>
+    <string name="select_button">Select</string>
+    <string name="setp3_title">Step 3: Select the destination folder</string>
+    <string name="setp4_title">Step 4: Change some options</string>
+    <string name="setp5_title">Step 5: Start classification</string>
+    <string name="start_button">Start</string>
+    <string name="error_tips">Please confirm that the information is correct.</string>
+    <string name="progress_tips">Please do not leave before completing.</string>
+    <string name="done_tips">Done!</string>
+    <string name="delete_original_file">Delete original file</string>
+    <string name="about_text">A small tool that categorizes the local media library according to the playlist, currently only supports NetEase Cloud Music.\nThis is a little toy I finished writing all night, and I am very sleepy, so this little toy just can be used, and your requirements should not be too high.</string>
+    <string name="coolapk">Coolapk</string>
+    <string name="github">Github</string>
+</resources>
