@@ -35,14 +35,14 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/content_margin"
+                    android:layout_marginBottom="@dimen/layout_margin"
                     android:text="@string/action_about"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/content_margin"
+                    android:layout_marginBottom="@dimen/layout_margin"
                     android:text="@string/about_text"
                     android:textAppearance="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem" />
 
@@ -128,7 +128,7 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/content_margin"
+                    android:layout_marginBottom="@dimen/layout_margin"
                     android:text="@string/setp2_title"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
@@ -181,7 +181,7 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/content_margin"
+                    android:layout_marginBottom="@dimen/layout_margin"
                     android:text="@string/setp3_title"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 

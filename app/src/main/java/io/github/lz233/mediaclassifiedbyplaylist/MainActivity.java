@@ -41,6 +41,8 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity {
+    private boolean isShowAbout = false;
+
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
 
@@ -97,12 +99,8 @@ public class MainActivity extends AppCompatActivity {
         destinationFolderAppCompatTextView.setText(DocumentFile.fromTreeUri(this, Uri.parse(sharedPreferences.getString("destinationFolderUriTree", ""))).getName());
         deleteOriginalFileSwitchMaterial.setChecked(sharedPreferences.getBoolean("deleteOriginalFile",false));
         //
-        coolapkAppCompatButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
+        coolapkAppCompatButton.setOnClickListener(view -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://coolapk.com/apk/io.github.lz233.mediaclassifiedbyplaylist"))));
+        githubAppCompatButton.setOnClickListener(view -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/lz233/MediaClassifiedByPlaylist"))));
         linkTextInputEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -250,14 +248,8 @@ public class MainActivity extends AppCompatActivity {
                     if (musicFolderUriTree != null) {
                         editor.putString("musicFolderUriTree", musicFolderUriTree.toString());
                         editor.apply();
-                        //final int takeFlags = getIntent().getFlags() & (Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
-                        //getContentResolver().takePersistableUriPermission(uriTree, takeFlags);
-                        // 创建所选目录的DocumentFile，可以使用它进行文件操作
                         DocumentFile musicFolderRoot = DocumentFile.fromTreeUri(this, musicFolderUriTree);
                         musicFolderAppCompatTextView.setText(musicFolderRoot.getName());
-                        // 比如使用它创建文件夹
-                        //DocumentFile[] rootList = root.listFiles();
-                        //shotOneTextViaSAF(root);
                     }
                     break;
                 case 1:
@@ -288,7 +280,14 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_about) {
+            if (isShowAbout){
+                aboutLinearLayout.setVisibility(View.GONE);
+                isShowAbout = false;
+            }else {
+                aboutLinearLayout.setVisibility(View.VISIBLE);
+                isShowAbout = true;
+            }
             return true;
         }
 

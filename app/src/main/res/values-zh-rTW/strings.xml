@@ -12,5 +12,8 @@
     <string name="progress_tips">在完成前請不要離開此頁面。</string>
     <string name="done_tips">完成！</string>
     <string name="delete_original_file">刪除原檔案</string>
-
+    <string name="action_about">關於</string>
+    <string name="about_text">一個將本地媒體庫按歌單分類的小工具，目前僅支援網易雲音樂。\n這是我一個晚上的寫完的小玩具，已經很困了，所以能用就行，要求不要太高。</string>
+    <string name="coolapk">酷安</string>
+    <string name="github">Github</string>
 </resources>

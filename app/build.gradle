@@ -10,18 +10,20 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.0"
     defaultConfig {
+        Date date = new Date()
         applicationId "io.github.lz233.mediaclassifiedbyplaylist"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        versionCode = date.format("yyyyMMdd").toInteger()
+        versionName = "0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
